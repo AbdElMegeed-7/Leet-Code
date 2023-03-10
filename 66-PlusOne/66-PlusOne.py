@@ -1,7 +1,11 @@
 class Solution:
     def plusOne(self, digits: list[int]) -> list[int]:
+
         convert_digits = int(''.join(map(str, digits))) + 1
+
+        # return int dtype
         return [int(digit) for digit in str(convert_digits)]
+        # return list(str(convert_digits))  # return str dtype
 
 
 solution = Solution()
